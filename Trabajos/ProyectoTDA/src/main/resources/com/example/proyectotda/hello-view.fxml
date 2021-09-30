@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #EEC100;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectotda.HelloController">
+   <children>
+      <Label layoutX="405.0" layoutY="23.0" text="Autos">
+         <font>
+            <Font name="Footlight MT Light" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="14.0" layoutY="82.0" promptText="Nombre" />
+      <TextField fx:id="txtCilindros" layoutX="199.0" layoutY="82.0" promptText="Cilindros" />
+      <Button layoutX="396.0" layoutY="154.0" mnemonicParsing="false" onAction="#eventoInsertar" prefHeight="26.0" prefWidth="106.0" text="Insertar" />
+      <TextField fx:id="txtVer" layoutX="695.0" layoutY="258.0" promptText="Auto insertado" />
+      <Button layoutX="752.0" layoutY="296.0" mnemonicParsing="false" onAction="#eventoVer" text="Ver" />
+      <ImageView fx:id="imgV1" fitHeight="218.0" fitWidth="257.0" layoutX="336.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/lupa.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtColor" layoutX="375.0" layoutY="82.0" promptText="Color" />
+      <TextField fx:id="txtMarca" layoutX="545.0" layoutY="82.0" promptText="Marca" />
+      <TextField fx:id="txtPrecio" layoutX="720.0" layoutY="82.0" promptText="Precio" />
+      <Label layoutX="405.0" layoutY="223.0" text="Auto relacionado:" />
+      <Label layoutX="113.0" layoutY="232.0" text="Motor relacionado:" />
+      <ImageView fx:id="imgV2" fitHeight="184.0" fitWidth="177.0" layoutX="75.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/lupa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
